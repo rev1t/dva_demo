@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<title>DVA Exercise</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"></link>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="/js/datatable2.js"></script>
+	
+	<style>
+	.my_class{
+	  float:left;
+	 }
+	</style>
+	<script type='text/javascript'>
+	function check(id,category,description)
+	{
+    alert('Customer Claim Details\n\nClaim Id : ' +id +'\nCategory : ' + category + '\nDescription : ' + description);
+	}
+
+	</script>
+	
+</head>
+
+<body style="margin:20px">
+	<h1>Customer Claim Report</h1>
+	<br/><br/>
+	<div style="text-align:center;">
+	<table width="80%" >
+	<tr>
+	<td>
+	<table id="customersTable" class="display">
+      
+       <!-- Header Table -->
+       <thead>
+            <tr>
+                <th style="text-align:center">Id</th>
+				<th style="text-align:center">First Name</th>
+                <th style="text-align:center">Last Name</th>
+                <th style="text-align:center">Address</th>
+                <th style="text-align:center">Postal</th>
+                <th style="text-align:center">Phone</th>
+                <th style="text-align:center">Email</th>
+                <th style="text-align:center">Claims Id</th>
+            </tr>
+        </thead>
+        <!-- Footer Table -->
+        <tfoot>
+            <tr>
+                 <th>Id</th>
+				<th style="text-align:center">First Name</th>
+                <th style="text-align:center">Last Name</th>
+                <th style="text-align:center">Address</th>
+                <th style="text-align:center">Postal</th>
+                <th style="text-align:center">Phone</th>
+                <th style="text-align:center">Email</th>
+                <th style="text-align:center">Claims Id</th>
+            </tr>
+        </tfoot>
+        
+    </table>
+    </td>
+    </tr>
+    </table>
+    </div>
+    
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
+</html>
