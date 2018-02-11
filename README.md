@@ -1,4 +1,4 @@
-Dear Callum/Alex,
+Dear,
 
 I have completed the programming assignment. The source code is at https://github.com/rev1t/dva_demo.
 
